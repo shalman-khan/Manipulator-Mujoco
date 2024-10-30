@@ -34,23 +34,31 @@ To get started, follow these steps to install the repository:
    cd Manipulator-Mujoco
    ```
 
-3. Install the repository in editable mode:
+3. Install the repository in editable mode: [Create Env before pip]
 
-   ```bash
-   pip install -e .
-   ```
+
+    ```bash
+    pip install -e .
+    ```
+    For Conda Env:
+
+    ```bash
+    conda install -c conda-forge mesa-libgl-cos6-x86_64
+    conda install -c conda-forge libegl
+    conda install -c conda-forge glfw
+    ```
+
+    For Venv:
+    
+    ```bash
+    pip install pyopengl glfw
+    sudo apt install libgl1-mesa-glx libgl1-mesa-dri libegl1-mesa
+    ```
+
 
 ## Demos
 
 Explore the capabilities of Manipulator-Mujoco with the provided demos located in the `/demo` folder:
-
-### Aubo i5 Arm with AG95 Gripper
-
-To run the demo for the Aubo i5 arm with the AG95 gripper, execute:
-
-```bash
-python aubo_i5_demo.py
-```
 
 ### UR5e Arm
 
