@@ -25,7 +25,7 @@ To get started, follow these steps to install the repository:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/ian-chuang/Manipulator-Mujoco.git
+   git clone https://github.com/shalman-khan/Manipulator-Mujoco.git
    ```
 
 2. Navigate to the root directory of the repository:
@@ -49,7 +49,7 @@ To get started, follow these steps to install the repository:
     ```
 
     For Venv:
-    
+
     ```bash
     pip install pyopengl glfw
     sudo apt install libgl1-mesa-glx libgl1-mesa-dri libegl1-mesa
@@ -65,8 +65,14 @@ Explore the capabilities of Manipulator-Mujoco with the provided demos located i
 To run the demo for the UR5e arm, execute:
 
 ```bash
-python ur5e_demo.py
+python ur5e_demo.py --mode Train
 ```
+
+```bash
+python ur5e_demo.py --mode Test
+```
+Note: There is an already learned model "ppo_ur5e_test" for direct testing
+
 
 In the demos, you can manipulate the arm by double-clicking and selecting the target red box mocap. Hold the Ctrl key and left-click and drag to rotate or Ctrl key and right-click and drag to translate. The arm will utilize operational space control to follow the target mocap.
 
